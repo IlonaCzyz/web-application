@@ -1,0 +1,14 @@
+;Nr strony z b³êdem w specyfikacji;Co jest b³êdem;Jak powinno byæ
+;1;za pomoc¹ przycisku „Sign in” zak³ada konto ;"usun¹æ ""zak³ada konto po czym u¿ytkownik """
+;1;„Your personal Information;cudzys³ów
+;1;„Your personal Information.;cudzys³ów
+;2;„address is too long. ;"cudzys³ów: „address is too long."" "
+;2;„address is too long. Maximum length 64”;"dwukropek: ""length: 64"""
+;2;„city is too long. Maximum length 64”;"dwukropek: ""length: 64"""
+;2;„Additional information is too long. Maximum length 300”.;"dwukropek: ""length: 300"""
+;2;„phone mobile is too long. Maximum length:32”.;"dodnie spacji: ""length: 32"" "
+;2;Po wype³nieniu wszystkich obowi¹zkowych pól zgodnie ze specyfikajc¹ ;Po poprawnym wype³nieniu wszystkich pól
+;;;
+;;;
+;;;
+;;;
