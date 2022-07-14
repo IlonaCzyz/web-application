@@ -1,0 +1,89 @@
+{
+  "id": "8298d2bc-8d4e-4224-a975-351ddb3eb0a1",
+  "version": "2.0",
+  "name": "Authentication",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "1c7259db-2e8d-4347-9473-c894b73af340",
+    "name": "test email address",
+    "commands": [{
+      "id": "64c7f690-0d6d-44de-9451-9c55a444dc8b",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ba2e9ec-04bc-4408-95ae-bbd488493b79",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1260x662",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "586407c6-6f74-419e-b1d7-d81f1abfcb0c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c545a072-c09d-4847-92ae-cbcecae038e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=email_create",
+      "targets": [
+        ["id=email_create", "id"],
+        ["name=email_create", "name"],
+        ["css=#email_create", "css:finder"],
+        ["xpath=//input[@id='email_create']", "xpath:attributes"],
+        ["xpath=//form[@id='create-account_form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17e17f31-c575-4ca7-a807-355651638812",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_create",
+      "targets": [
+        ["id=email_create", "id"],
+        ["name=email_create", "name"],
+        ["css=#email_create", "css:finder"],
+        ["xpath=//input[@id='email_create']", "xpath:attributes"],
+        ["xpath=//form[@id='create-account_form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moj@test.com"
+    }, {
+      "id": "6c9a6285-4786-41c7-975c-5ee42222dae5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='SubmitCreate']/span",
+      "targets": [
+        ["css=#SubmitCreate > span", "css:finder"],
+        ["xpath=//button[@id='SubmitCreate']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1084ff10-53be-4be7-b763-7b25493e9f14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1c7259db-2e8d-4347-9473-c894b73af340"]
+  }],
+  "urls": ["http://automationpractice.com/index.php"],
+  "plugins": []
+}
