@@ -1,0 +1,27 @@
+NR;Wymagania w oparciu o specyfikacjê;;;
+1;    U¿ytkownik mo¿e korzystaæ z aplikacji internetowej w przegl¹darce Chrome, Firefox oraz Microsoft Edge.;;;
+2;"W celu rejestracji w sklepie internetowym, u¿ytkownik otwiera stronê w dedykowanej przegl¹darce lub urz¹dzeniu mobilnym i za pomoc¹ przycisku „Sign in” zostaje przeniesiony do formularza Authentication, który zawiera: • Create an account
+• Already registered
+Aby zacz¹æ proces rejestracji u¿ytkownik w pole „Email address” podaje adres mailowy, a nastêpnie zostaje przekierowany do formularza „Create an account”";;;
+3;Your personal Information;;;
+4;·       Radiobutton Mr., Mrs. - pole nieobowi¹zkowe;;;
+5;• First name - pole obowi¹zkowe, od 1-64 znaków, w przypadku pola pustego/niepoprawnie uzupe³nionego informacja „firstname is required.” Przyjmuje litery diakrytyczne polskie, du¿e i ma³e litery, cyfry 0-10, znaki specjalne: „^”, „&”, „*”, „-”, „[”, „]”, „\”, „|”, „.”, „/”, „`”, „~”, „\”, „|”,), w tym spacjê. ;;;
+6;• Last name - pole obowi¹zkowe, od 1-64 znaków, w przypadku pola pustego/niepoprawnie uzupe³nionego informacja „lastname is required.” Przyjmuje litery diakrytyczne polskie, du¿e i ma³e litery, cyfry 0-10, znaki specjalne: „^”, „&”, „*”, „-”, „[”, „]”, „\”, „|”, „.”, „/”, „`”, „~”, „\”, „|”,), w tym spacjê;;;
+7;·       Email - pole obowi¹zkowe, poprawna forma to „nazwa@domena”, w przypadku niepoprawnej formy informacja „email is invalid.” . W przypadku pola pustego informacja „email is required.”;;;
+8;·       Password - pole obowi¹zkowe, od 5 do 32 znaków. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e, cyfry 0-10, wszystkie znaki specjalne w tym spacje. W przypadku przekroczenia podanej iloœci znaków pojawia siê komunikat „password is too long. Maximum length: 32”. W przypadku pola pustego informacja „password is required.”;;;
+9;• Date of Birth - pole nieobowi¹zkowe w formie rozwijalnych trzech list: dzieñ (1-31), miesi¹c (12 miesiêcy), rok (1900-2022).;;;
+10;·       Checkbox „Sign up for our newsletter!” , „Receive special offers from our partners!” - pole nieobowi¹zkowe.;;;
+11;Your address;;;
+12;·       First name - pole obowi¹zkowe, autouzupe³nienie z pola „First name” z „Your personal Information. Mo¿liwoœæ edycji (nie wp³ywa to na pole z „First name” z „Your personal Information”).;;;
+13;·       Last name - pole obowi¹zkowe,  autouzupe³nienie z pola „First name” z „Your personal Information. Mo¿liwoœæ edycji (nie wp³ywa to na pole z „First name” z „Your personal Information”).;;;
+14;·       Company - pole nieobowi¹zkowe, od 1-64 znaków. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e, cyfry 0-10, wszystkie znaki specjalne w tym spacje. W przypadku przekroczenia podanej iloœci znaków pojawia siê komunikat „company is too long. Maximum length: 64”;;;
+15;·       Address - pole obowi¹zkowe, od 1-64 znaków. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e litery, cyfry 0-10, w tym spacjê, bez znaków specjalnych. W przypadku przekroczenia tej iloœæ komunikat „address is too long. Maximum length 64”. W przypadku pola pustego informacja „address is required.”;;;
+16;·       City - pole obowi¹zkowe, od 1-64 znaki. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e litery, cyfry 0-10, bez spacji i znaków specjalnych. W przypadku przekroczenia tej iloœæ komunikat „city is too long. Maximum length 64”. W przypadku pola pustego informacja „city is required.”;;;
+17;·       State - pole obowi¹zkowe, w formie rozwijalnej listy, 50 stanów. Lista pojawia siê po wybraniu „Country”.;;;
+18;·     Zip/Postal Code - pole obowi¹zkowe, poprawny format 00000. W przypadku przekroczenia iloœci znaków informacja „postcode is too long. Maximum length: 12.” W przypadku niepoprawnie uzupe³nionego pola informacja „The Zip/Postal code you’ve entered is invalid. It must follow this format: 00000”. W przypadku pustego pola „The Zip/Postal is required. ”;;;
+19;·       Country - pole obowi¹zkowe, w formie rozwijalnej listy. W przypadku braku wyboru pojawia siê kominukat „Country is invalid”, „Country cannot be loaded with address->id_country”;;;
+20;·       Additional information - pole nieobowi¹zkowe, maksymalnie 300 znaków. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e, cyfry 0-10, wszystkie znaki specjalne w tym spacje. W przypadku przekroczenia tej iloœæ komunikat „Additional information is too long. Maximum length 300”.;;;
+21;·       Home phone, Mobile phone - jedno z pól obowi¹zkowe, od 1-32 znaków. W przypadku pola pustego informacja „You must register at least one phone number.” W przypadku niepoprawnie uzupe³nionego pola informacja „phone mobile/home phone is invalid.”. W przypadku przekroczenia iloœci znaków komunikat „phone mobile is too long. Maximum length:32”, „home phone is too long. Maximum length:32”.;;;
+22;·       Assign an address alias for future refernce – pole obowi¹zkowe, od 1-32 znaków. Przyjmuje litery diakrytyczne polskie, du¿e i ma³e, cyfry 0-10, wszystkie znaki specjalne w tym spacje. W przypadku przekroczenia iloœci znaków komunikat „alias is too long. Maximum length: 32”. W przypadku pustego pola pojawia siê informacja „alias is required.” ;;;
+23;Po poprawnym wype³nieniu wszystkich pól i klikniêciu przycisku „Register”, u¿ytkownik powinien zostaæ poinformowany o poprawnym zarejestrowaniu siê oraz otrzymaæ wiadomoœæ na wskazany adres mailowy z linkiem potwierdzaj¹cym wiadomoœæ. ;;;
+24;Po klikniêciu w link, u¿ytkownik powinien zostaæ przeniesiony do formularza z logowaniem. ;;;
