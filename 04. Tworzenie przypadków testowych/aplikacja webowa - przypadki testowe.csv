@@ -1,0 +1,34 @@
+TCID;Tytul;Warunki wstepne;ID Kroku;Opis kroku;Oczekiwany rezultat;;
+1;U¿ytkownik mo¿e otworzyæ aplikacjê internetow¹ w przegl¹darce Chroma. ;U¿ytkownik posiada otwart¹ przegl¹darkê internetow¹ Chroma.;1;"Wpisuje w pasek adresu http://automationpractice.com/ i naciska ""Enter""";;;
+;;;2;U¿ytkownik zostaje przekierowany do aplikacji internetowej.;" 
+U¿ytkownik zostaje przekierowany do strony g³ównej aplikacji internetowej.";;pass
+2;U¿ytkownik mo¿e otworzyæ aplikacjê internetow¹ w przegl¹darce Microsoft Edge.;U¿ytkownik posiada otwart¹ przegl¹darkê internetow¹ Microsoft Edge.;1;"Wpisuje w pasek adresu http://automationpractice.com/ i naciska ""Enter""";;;
+;;;2;U¿ytkownik zostaje przekierowany do aplikacji internetowej.;" 
+U¿ytkownik zostaje przekierowany do strony g³ównej aplikacji internetowej.";;pass
+3;U¿ytkownik mo¿e otworzyæ aplikacjê internetow¹ w przegl¹darce Firefox.;U¿ytkownik posiada otwart¹ przegl¹darkê internetow¹ Firefox.;1;"Wpisuje w pasek adresu http://automationpractice.com/ i naciska ""Enter""";;;
+;;;2;U¿ytkownik zostaje przekierowany do aplikacji internetowej.;" 
+U¿ytkownik zostaje przekierowany do strony g³ównej aplikacji internetowej.";;pass
+6;"Uwierzytelnianie za pomoc¹ przycisku ""Sign in"" i przeniesienie do formularza rejestracyjnego - happy path";U¿ytkownik posiada przegl¹darkê Chroma, aplikacja jest otwarta na stronie g³ównej.;1;"U¿ytkownik naciska przyski ""Sing in"".";;;
+;;;2;"Na stronie ""Authentication"" w pole ""Adddress email"" podaje mail do rejestracji i wciska ""Create an account""";U¿ytkownik zosta³ przeniesiony do formularza rejestracyjnego;;pass
+7;"Uwierzytelnianie za pomoc¹ przycisku ""Sign in"" i przeniesienie do formularza rejestracyjnego - unhappy path";U¿ytkownik posiada przegl¹darkê Chroma, aplikacja jest otwarta na stronie g³ównej.;1;"U¿ytkownik naciska przyski ""Sing in"".";;;
+;;;2;"Na stronie ""Authentication"" pole ""Adddress email"" pozostawia puste i wciska ""Create an account""";"U¿ytkownik nie przechodzi do formularza rejestracyjnego, wyœwietla siê informacja ""1.Invalid email address.""";;pass
+8;Rejestracja nowego u¿ytkownika za pomoc¹ formularza rejestracyjnego - happy path;U¿ytkownik posiada przegl¹darkê Chroma, aplikacja jest otwarta na stronie g³ównej.;1;U¿ytkownik wype³nia pola w formularzu rejestracyjnym odpowiedni¹ iloœci¹ znaków, z zastosowaniem dozwolonych znaków specjlanych.;;;
+;;;2;"Wciska przycisk ""Register""";U¿ytkownik zosta³ zarejestrowany.;;
+9;Rejestracja nowego u¿ytkownika za pomoc¹ formularza rejestracyjnego - unhappy path;U¿ytkownik posiada przegl¹darkê Chroma, aplikacja jest otwarta na stronie g³ównej.;1;U¿ytkownik pozostawia wszystkie pola puste.;;;
+;;;2;"Wciska przycisk ""Register""";U¿ytkownik nie zosta³ zarejestrowany, wyœwietli³ siê komunikat z informacjami o b³êdnej walidacji.;;
+10;Informacja o poprawnym zarejestrowaniu siê i otrzymanie linku z potwierdzeniem na adres mailowy wskazany w formularzu rejestracyjnym.;"U¿ytkownik posiada przegl¹darkê Chroma, wype³ni³ poprawnie formularz rejestracyjny i wcisn¹³ przycisk ""Register"" ";1;U¿ytkownik zosta³ przekierowany od razu do panelu zalogowanego u¿ytkownika.;;;
+;;;2;U¿ytkownik loguje siê na maila wskazanego w formularzu rejestracyjnym.;Informacja o poprawnym zarejestrowaniu oraz przes³any link na maila wskazanego w formularzu rejestracyjnym z potwierdzeniem rejestracji.;;fail
+12;State - pole obowi¹zkowe, w formie rozwijanej listy, 50 stanów. Lista pojawia siê po wybraniu „Country”.;U¿ytkownik posiada przegl¹darkê Chroma, jest w formularzu rejestracyjnym;1;"U¿ytkownik wybiera ""United States"" z listy ""Country"" ";;;
+;;;2;"W polu ""State"" wybiera stan spoœród 50 dostêpnych";U¿ytkownik mo¿e wybraæ jeden stan z dostêpnych 50 pozycji;;fail
+13;Poprawnoœæ wyœwietlania komunikatów w przypadku braku uzupe³nienia pól w formularzu rejestracyjnym;U¿ytkownik posiada przegl¹darkê Chroma, jest w formularzu rejestracyjnym;1;U¿ytkownik pozostawia puste pola.;;;
+;;;2;"U¿ytkownik naciska przycisk ""Register""";Komunikaty poprawnie wyœwietlaj¹ informacjê o koniecznoœci uzupe³nienia wszystkich obowi¹zkowych pól;;
+14;Poprawnoœæ wyœwietlania komunikatów w przypadku u¿ycia niedozwolonych znaków.;U¿ytkownik posiada przegl¹darkê Chroma, jest w formularzu rejestracyjnym;1;U¿ytkownik wype³nia pola z u¿yciem niedozwolonych znaków.;;;
+;;;2;"U¿ytkownik naciska przycisk ""Register""";Komunikaty poprawnie wyœwietlaj¹ informacjê o b³ednej walidacji.;;fail
+15;Poprawnoœæ wyœwietlania komunikatów w przypadku u¿ycia nieodpowiedniej liczby znaków.;U¿ytkownik posiada przegl¹darkê Chroma, jest w formularzu rejestracyjnym;1;U¿ytkownik wype³nia pola z u¿yciem nieodpowiedniej liczby znaków.;;;
+;;;2;"U¿ytkownik naciska przycisk ""Register""";Komunikaty poprawnie wyœwietlaj¹ informacjê o u¿yciu maksymalnej iloœci znaków.;;
+16;Home phone, Mobile phone - jedno z pól obowi¹zkowe do uzupe³nienia - happy path;U¿ytkownik posiada przegl¹darkê Chroma, jest w formularzu rejestracyjnym;1;"U¿ytkownik wype³nia pole ""Home phone""";;;
+;;;2;"U¿ytkownik zostwia puste pole ""Mobile phone""";;;
+;;;3;"U¿ytkownik naciska przycisk ""Register""";Rejestracja przebieg³a poprawnie;;fail
+;;;;;;;
+;;;;;;;
+;;;;;;;
